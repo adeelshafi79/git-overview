@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Overview and Cheat Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: "Courier New", Courier, monospace;
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Git Overview and Cheat Sheet</h1>
+
+    <h2>Git Overview</h2>
+    <p>Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is free and open-source software created by Linus Torvalds in 2005.</p>
+    <p>Key features of Git include:</p>
+    <ul>
+        <li><strong>Distributed System:</strong> Every developer has a full copy of the entire project history on their own machine, making it easy to work offline or remotely.</li>
+        <li><strong>Branching and Merging:</strong> Git allows you to create multiple branches and merge them efficiently, supporting parallel development and experimentation.</li>
+        <li><strong>Speed:</strong> Git is fast in operations like branching, merging, and committing changes.</li>
+        <li><strong>Data Integrity:</strong> Every file and commit is checksummed and retrieved by its checksum, ensuring the integrity of the project history.</li>
+    </ul>
+
+    <h2>Git Cheat Sheet</h2>
+    <h3>Basic Commands</h3>
+    <pre><code>git init
+# Initialize a new Git repository
+
+git clone &lt;url&gt;
+# Clone an existing repository
+
+git status
+# Show the working directory status
+
+git add &lt;file&gt;
+# Add a file to the staging area
+
+git commit -m "commit message"
+# Commit changes with a message
+
+git push
+# Push changes to the remote repository
+
+git pull
+# Fetch and merge changes from the remote repository
+</code></pre>
+
+    <h3>Branching and Merging</h3>
+    <pre><code>git branch
+# List all branches
+
+git branch &lt;branch-name&gt;
+# Create a new branch
+
+git checkout &lt;branch-name&gt;
+# Switch to the specified branch
+
+git merge &lt;branch-name&gt;
+# Merge the specified branch into the current branch
+
+git branch -d &lt;branch-name&gt;
+# Delete the specified branch
+</code></pre>
+
+    <h3>Viewing History</h3>
+    <pre><code>git log
+# View commit history
+
+git log --oneline
+# View commit history with abbreviated commit IDs and messages
+
+git log --graph --oneline
+# View commit history as a graph
+</code></pre>
+
+    <h3>Undoing Changes</h3>
+    <pre><code>git reset &lt;commit&gt;
+# Reset to a previous commit
+
+git reset --hard &lt;commit&gt;
+# Reset to a previous commit and discard all changes
+
+git revert &lt;commit&gt;
+# Revert a specific commit by creating a new commit
+</code></pre>
+
+    <h3>Remote Repositories</h3>
+    <pre><code>git remote add origin &lt;url&gt;
+# Add a remote repository
+
+git remote -v
+# List remote repositories
+
+git fetch
+# Fetch changes from the remote repository
+
+git pull
+# Fetch and merge changes from the remote repository
+
+git push
+# Push changes to the remote repository
+</code></pre>
+</body>
+</html>
+

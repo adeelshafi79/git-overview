@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Overview - Another Employee Adds File</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: "Courier New", Courier, monospace;
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Git Overview - Another Employee Adds File</h1>
+
+    <h2>Introduction</h2>
+    <p>Git is a distributed version control system (DVCS) that allows multiple developers to collaborate on a project simultaneously. Let's explore how Git enables collaboration through an example.</p>
+
+    <h2>Scenario</h2>
+    <p>Suppose you're working on a project with another employee, John. Both of you are using Git to manage the project's source code. John has just joined the project and needs to add a new file to the repository.</p>
+
+    <h2>John Adds a File</h2>
+    <p>John creates a new file named <code>new_feature.js</code> for implementing a new feature in the project. Here's what he does:</p>
+    <pre><code>echo "console.log('Implementing new feature');" &gt; new_feature.js
+git add new_feature.js
+git commit -m "Add new feature implementation"
+git push origin main
+    </code></pre>
+
+    <h2>Employee 2 Renames File</h2>
+    <p>Employee 2 decides to rename the <code>index.html</code> file to <code>employee1.html</code> to better understand distributed version control systems. Here's the process:</p>
+    <pre><code>git mv index.html employee1.html
+git commit -m "Rename index.html to employee1.html"
+git push origin main
+    </code></pre>
+
+    <h2>Explanation</h2>
+    <p>In the above commands:</p>
+    <ul>
+        <li><code>git mv index.html employee1.html</code>: Employee 2 uses the <code>git mv</code> command to rename the <code>index.html</code> file to <code>employee1.html</code>.</li>
+        <li><code>git commit -m "Rename index.html to employee1.html"</code>: Employee 2 commits the changes with a descriptive message indicating the file rename operation.</li>
+        <li><code>git push origin main</code>: Employee 2 pushes the changes to the remote repository (named "origin") on the main branch.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>Through this example, we see how Git facilitates collaboration in a project by allowing multiple developers to work on the same codebase simultaneously. Each developer can make changes independently, and Git ensures that these changes are tracked, merged, and synchronized seamlessly.</p>
+</body>
+</html>
+

@@ -1,0 +1,1 @@
+Now I'm adding rules for restrictions in PROD|UAT|QA branches. Only in DEV branch we can push the code.
